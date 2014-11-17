@@ -10,15 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var userNameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    //MARK: buttons actions
+    
+    @IBAction func resetButtonAction(sender: UIButton) {
+        
+        self.userNameField.text = ""
+        self.passwordField.text = ""
     }
+    
+    @IBAction func loginButtonAction(sender: UIButton) {
+        
+        self.performSegueWithIdentifier("loginToParent", sender: self)
+    }
+    
 
 
 }

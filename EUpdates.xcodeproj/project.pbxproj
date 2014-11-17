@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F87953DA1A1A861500823EFF /* UpdateDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87953D91A1A861500823EFF /* UpdateDetailsViewController.swift */; };
 		F8EBE9EE1A1A7BB200ECE301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBE9ED1A1A7BB200ECE301 /* AppDelegate.swift */; };
 		F8EBE9F01A1A7BB200ECE301 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBE9EF1A1A7BB200ECE301 /* ViewController.swift */; };
 		F8EBE9F31A1A7BB200ECE301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EBE9F11A1A7BB200ECE301 /* Main.storyboard */; };
 		F8EBE9F51A1A7BB200ECE301 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EBE9F41A1A7BB200ECE301 /* Images.xcassets */; };
 		F8EBE9F81A1A7BB200ECE301 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8EBE9F61A1A7BB200ECE301 /* LaunchScreen.xib */; };
 		F8EBEA041A1A7BB200ECE301 /* EUpdatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBEA031A1A7BB200ECE301 /* EUpdatesTests.swift */; };
+		F8EBEA101A1A80A600ECE301 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBEA0F1A1A80A600ECE301 /* ParentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F87953D91A1A861500823EFF /* UpdateDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateDetailsViewController.swift; sourceTree = "<group>"; };
 		F8EBE9E81A1A7BB200ECE301 /* EUpdates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EUpdates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8EBE9EC1A1A7BB200ECE301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8EBE9ED1A1A7BB200ECE301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		F8EBE9FD1A1A7BB200ECE301 /* EUpdatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EUpdatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8EBEA021A1A7BB200ECE301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8EBEA031A1A7BB200ECE301 /* EUpdatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUpdatesTests.swift; sourceTree = "<group>"; };
+		F8EBEA0F1A1A80A600ECE301 /* ParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				F8EBE9ED1A1A7BB200ECE301 /* AppDelegate.swift */,
 				F8EBE9EF1A1A7BB200ECE301 /* ViewController.swift */,
+				F8EBEA0F1A1A80A600ECE301 /* ParentViewController.swift */,
+				F87953D91A1A861500823EFF /* UpdateDetailsViewController.swift */,
 				F8EBE9F11A1A7BB200ECE301 /* Main.storyboard */,
 				F8EBE9F41A1A7BB200ECE301 /* Images.xcassets */,
 				F8EBE9F61A1A7BB200ECE301 /* LaunchScreen.xib */,
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87953DA1A1A861500823EFF /* UpdateDetailsViewController.swift in Sources */,
 				F8EBE9F01A1A7BB200ECE301 /* ViewController.swift in Sources */,
 				F8EBE9EE1A1A7BB200ECE301 /* AppDelegate.swift in Sources */,
+				F8EBEA101A1A80A600ECE301 /* ParentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +415,7 @@
 				F8EBEA091A1A7BB200ECE301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8EBEA0A1A1A7BB200ECE301 /* Build configuration list for PBXNativeTarget "EUpdatesTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +424,7 @@
 				F8EBEA0C1A1A7BB200ECE301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

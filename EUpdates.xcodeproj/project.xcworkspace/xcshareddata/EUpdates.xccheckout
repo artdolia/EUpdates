@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A109C172-2906-43BB-B4B1-F85D2424BB9A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EUpdates</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>97AA08F42672DDDE9CEA38A8103C231014737A9B</key>
+		<string>https://github.com/artdolia/EUpdates.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EUpdates.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>97AA08F42672DDDE9CEA38A8103C231014737A9B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/artdolia/EUpdates.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>97AA08F42672DDDE9CEA38A8103C231014737A9B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>97AA08F42672DDDE9CEA38A8103C231014737A9B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EUpdates</string>
+		</dict>
+	</array>
+</dict>
+</plist>
