@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F82945531A1BE30700DBC150 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F82945521A1BE30700DBC150 /* logo.png */; };
 		F87953DA1A1A861500823EFF /* UpdateDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87953D91A1A861500823EFF /* UpdateDetailsViewController.swift */; };
 		F8EBE9EE1A1A7BB200ECE301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBE9ED1A1A7BB200ECE301 /* AppDelegate.swift */; };
 		F8EBE9F01A1A7BB200ECE301 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBE9EF1A1A7BB200ECE301 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F82945521A1BE30700DBC150 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		F87953D91A1A861500823EFF /* UpdateDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateDetailsViewController.swift; sourceTree = "<group>"; };
 		F8EBE9E81A1A7BB200ECE301 /* EUpdates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EUpdates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8EBE9EC1A1A7BB200ECE301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				F8EBE9F11A1A7BB200ECE301 /* Main.storyboard */,
 				F8EBE9F41A1A7BB200ECE301 /* Images.xcassets */,
 				F8EBE9F61A1A7BB200ECE301 /* LaunchScreen.xib */,
+				F82945521A1BE30700DBC150 /* logo.png */,
 				F8EBE9EB1A1A7BB200ECE301 /* Supporting Files */,
 			);
 			path = EUpdates;
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82945531A1BE30700DBC150 /* logo.png in Resources */,
 				F8EBE9F31A1A7BB200ECE301 /* Main.storyboard in Resources */,
 				F8EBE9F81A1A7BB200ECE301 /* LaunchScreen.xib in Resources */,
 				F8EBE9F51A1A7BB200ECE301 /* Images.xcassets in Resources */,
