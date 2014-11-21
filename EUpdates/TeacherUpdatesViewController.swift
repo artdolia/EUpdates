@@ -1,59 +1,52 @@
 //
-//  ParentViewController.swift
+//  TeacherUpdatesViewController.swift
 //  EUpdates
 //
-//  Created by Artsiom Dolia on 11/17/14.
+//  Created by Artsiom Dolia on 11/21/14.
 //  Copyright (c) 2014 Artsiom Dolia. All rights reserved.
 //
 
 import UIKit
 
-class ParentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TeacherUpdatesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
-    @IBOutlet weak var activityHeaderLabel: UILabel!
     var tableData = []
     var tableView: UITableView?
-    var actions = ["Updates", "Attendance", "Feedback"]
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tabBarController?.title = "Updates"
-        
-        //create table view
         let tFrame = self.view.bounds
         let tableView = UITableView(frame: tFrame)
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.contentInset = UIEdgeInsetsMake(80, 0, 0, 0)
+        tableView.contentInset = UIEdgeInsetsMake(230, 0, 100, 0)
         
         self.view.addSubview(tableView)
-
+        
         self.tableView = tableView
         
-        self.setActivityName(actions[0])
+        //self.setActivityName(actions[0])
         
         fetchJson()
-    }
-    
-    func setActivityName(name: NSString){
-        
-        //self.activityHeaderLabel.text = name
-    }
 
+    }
     
     //MARK: UITableViewDataSource
+//    
+//    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String?{
+//        
+//        return "Updates List"
+//        
+//    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
         //println(self.tableData.count)
         return self.tableData.count
     }
-    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         
@@ -72,15 +65,14 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     
-    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         var cell: UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
         //println("\(tableView.indexPathForCell(cell))")
         cell.setSelected(false, animated: true)
-        self.performSegueWithIdentifier("updateToDetails", sender: self)
+        self.performSegueWithIdentifier("teacherUpdateToDetails", sender: self)
     }
-    
+
     
     //MARK: JSON
     
@@ -127,7 +119,7 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "updateToDetails" {
+        if segue.identifier == "teacherUpdateToDetails" {
             
             //prepare data array to pass
             
@@ -146,7 +138,13 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
             
         }
     }
+
     
+    
+    @IBAction func addUpdateButton(sender: UIButton) {
+        
+        self.performSegueWithIdentifier("teacherUpdatesToAdd", sender: self)
+    }
     
 
 }

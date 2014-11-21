@@ -18,18 +18,39 @@ class ViewController: UIViewController {
 
     }
 
+
     
     //MARK: buttons actions
     
     @IBAction func resetButtonAction(sender: UIButton) {
         
-        self.userNameField.text = ""
-        self.passwordField.text = ""
+        
+        self.clearFields()
     }
     
     @IBAction func loginButtonAction(sender: UIButton) {
         
-        self.performSegueWithIdentifier("loginToParent", sender: self)
+        if self.userNameField.text == "parent" {
+            
+            self.performSegueWithIdentifier("loginToTabParent", sender: self)
+            
+            
+        }else if self.userNameField.text == "" {
+            
+            self.performSegueWithIdentifier("loginToTabTeacher", sender: self)
+            
+            
+        }
+        
+        self.clearFields() 
+        
+
+    }
+    
+    func clearFields(){
+        self.userNameField.text = ""
+        self.passwordField.text = ""
+        
     }
     
 

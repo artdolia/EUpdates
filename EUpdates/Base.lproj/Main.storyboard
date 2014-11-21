@@ -4,6 +4,230 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
+        <!--Attendance-->
+        <scene sceneID="uCE-eZ-uCI">
+            <objects>
+                <viewController id="E9J-HS-K9m" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y9f-h0-H3o"/>
+                        <viewControllerLayoutGuide type="bottom" id="Meo-ab-4NB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kLw-UX-DYI">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Attendance" id="qfD-Xk-HGz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fkB-y6-vvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906.5" y="-1657"/>
+        </scene>
+        <!--Feedback-->
+        <scene sceneID="qkI-pv-BZn">
+            <objects>
+                <viewController id="hYH-db-ba0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4wD-b1-sbr"/>
+                        <viewControllerLayoutGuide type="bottom" id="j52-b8-Gg5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e14-aJ-HDA">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Feedback" id="XQR-aF-h3D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMR-0R-WZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906.5" y="-979"/>
+        </scene>
+        <!--Updates-->
+        <scene sceneID="9Zb-sa-Zx5">
+            <objects>
+                <viewController id="sQ0-c0-tm3" customClass="TeacherUpdatesViewController" customModule="EUpdates" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="37q-R7-zMq"/>
+                        <viewControllerLayoutGuide type="bottom" id="gX1-Zd-ibM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ydS-do-6gk">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYp-qJ-NDp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posted Updates:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FO1-vv-JVg">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="100" y="136" width="200" height="23"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN9-T2-mwd">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.68448539399999997" blue="5.6137736749999998e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Add Update">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="30" y="31" width="340" height="70"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="addUpdateButton:" destination="sQ0-c0-tm3" eventType="touchUpInside" id="zfS-Gq-Tge"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="FO1-vv-JVg"/>
+                                        <exclude reference="PN9-T2-mwd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="168"/>
+                                    <mask key="subviews">
+                                        <include reference="FO1-vv-JVg"/>
+                                        <include reference="PN9-T2-mwd"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="qYp-qJ-NDp"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="qYp-qJ-NDp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Updates" id="vSN-7E-mFz"/>
+                    <connections>
+                        <segue destination="KlV-4t-fig" kind="show" identifier="teacherUpdatesToAdd" id="7MF-sS-DTe"/>
+                        <segue destination="5L0-hR-czY" kind="show" identifier="teacherUpdateToDetails" id="yXp-GS-cxq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJE-TN-hVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906.5" y="-2331"/>
+        </scene>
+        <!--Teacher Add Update View Controller-->
+        <scene sceneID="MUj-14-aYA">
+            <objects>
+                <viewController id="KlV-4t-fig" customClass="TeacherAddUpdateViewController" customModule="EUpdates" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4me-4l-8UZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="5KD-pG-Fx9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DRV-52-XXi">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXL-PJ-rRJ">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="121" width="400" height="162"/>
+                                </variation>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tune a text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdt-Zf-SmS">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.1165710566" green="0.60115534120000003" blue="0.93210767660000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="1" y="298" width="399" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B8-Qr-pVb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.68448539399999997" blue="5.6137736749999998e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Post Update">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="30" y="505" width="340" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="postUpdateAction:" destination="KlV-4t-fig" eventType="touchUpInside" id="tPd-iO-1a1"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdO-sK-Vb5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="30" y="340" width="340" height="128"/>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a kid and a subject" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lh7-xU-sk3">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.1165710566" green="0.60115534120000003" blue="0.93210767660000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="1" y="83" width="399" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="YXL-PJ-rRJ"/>
+                                <exclude reference="zdt-Zf-SmS"/>
+                                <exclude reference="5B8-Qr-pVb"/>
+                                <exclude reference="BdO-sK-Vb5"/>
+                                <exclude reference="Lh7-xU-sk3"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="YXL-PJ-rRJ"/>
+                                <include reference="zdt-Zf-SmS"/>
+                                <include reference="5B8-Qr-pVb"/>
+                                <include reference="BdO-sK-Vb5"/>
+                                <include reference="Lh7-xU-sk3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="YXL-PJ-rRJ" id="L9D-kJ-Nqc"/>
+                        <outlet property="updateTextView" destination="BdO-sK-Vb5" id="5O6-zF-JZI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jcu-Zx-heY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2754" y="-2331"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pkI-rA-vRE">
+            <objects>
+                <tabBarController id="bWR-H5-bcU" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="HH5-cd-HlU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sQ0-c0-tm3" kind="relationship" relationship="viewControllers" id="ifn-LH-k8j"/>
+                        <segue destination="E9J-HS-K9m" kind="relationship" relationship="viewControllers" id="bAc-nE-DpU"/>
+                        <segue destination="hYH-db-ba0" kind="relationship" relationship="viewControllers" id="t6y-6q-SgV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6M9-o8-6WL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967.5" y="-1377"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -40,7 +264,7 @@
                                     <rect key="frame" x="21" y="293" width="92" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beI-bL-N8e">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter User Name" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beI-bL-N8e">
                                 <rect key="frame" x="325" y="213" width="203" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -51,10 +275,10 @@
                                     <rect key="frame" x="134" y="224" width="203" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="scs-Sy-Nmj">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="scs-Sy-Nmj">
                                 <rect key="frame" x="325" y="278" width="203" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="143" y="293" width="203" height="30"/>
                                 </variation>
@@ -119,29 +343,89 @@
                     <connections>
                         <outlet property="passwordField" destination="scs-Sy-Nmj" id="ixl-lQ-m9R"/>
                         <outlet property="userNameField" destination="beI-bL-N8e" id="ffd-PM-Z5k"/>
-                        <segue destination="u0G-0E-4sW" kind="show" identifier="loginToParent" id="oae-vq-u6e"/>
+                        <segue destination="I6z-Um-KKY" kind="show" identifier="loginToTabParent" id="WPY-N5-b12"/>
+                        <segue destination="bWR-H5-bcU" kind="show" identifier="loginToTabTeacher" id="xhY-oM-wPX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="968" y="-557"/>
         </scene>
-        <!--Parent-->
-        <scene sceneID="bsN-Xd-yTp">
+        <!--ParentAttendance-->
+        <scene sceneID="khn-Jl-lwx">
             <objects>
-                <viewController id="u0G-0E-4sW" customClass="ParentViewController" customModule="EUpdates" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ParentAttendance" id="Pfg-L2-VWA" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="c3a-7V-5b5"/>
-                        <viewControllerLayoutGuide type="bottom" id="fEq-eU-vNA"/>
+                        <viewControllerLayoutGuide type="top" id="t8L-PP-FKY"/>
+                        <viewControllerLayoutGuide type="bottom" id="9a8-0h-eLM"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zHz-3C-LZY">
+                    <view key="view" contentMode="scaleToFill" id="FZ6-22-67A">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Attendance" id="NDk-kl-XBN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJQ-hx-hcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906.5" y="512"/>
+        </scene>
+        <!--ParentFeedback-->
+        <scene sceneID="AKV-wK-NbV">
+            <objects>
+                <viewController title="ParentFeedback" id="QQy-Kq-Xgn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4gF-qj-qnn"/>
+                        <viewControllerLayoutGuide type="bottom" id="4dB-0a-f74"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sAK-13-Rfn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Feedback" id="XTF-Pu-Osl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wUd-AO-nU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906.5" y="1228"/>
+        </scene>
+        <!--ParentUpdates-->
+        <scene sceneID="imr-K0-hzM">
+            <objects>
+                <viewController title="ParentUpdates" id="LED-T4-qaz" customClass="ParentViewController" customModule="EUpdates" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eRc-Eg-FiQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="a6D-rn-6rO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RrK-FL-a2W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Updates" id="wou-nJ-ARy"/>
+                    <connections>
+                        <segue destination="5L0-hR-czY" kind="show" identifier="updateToDetails" id="Uxt-BJ-dQf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSX-Dm-ZQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906.5" y="-158"/>
+        </scene>
+        <!--UpdateDetails-->
+        <scene sceneID="XmI-5Y-Vg2">
+            <objects>
+                <viewController title="UpdateDetails" id="5L0-hR-czY" customClass="UpdateDetailsViewController" customModule="EUpdates" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5B8-SR-3Rc"/>
+                        <viewControllerLayoutGuide type="bottom" id="S7v-Ul-Nrc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WoQ-8D-Hx7">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjD-MV-qCz">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0G-5z-v5M">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhq-Xc-LGB">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0H-UU-DcU">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <color key="backgroundColor" red="0.1165710566" green="0.60115534120000003" blue="0.93210767660000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -158,118 +442,68 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="default">
                                     <mask key="subviews">
-                                        <exclude reference="zhq-Xc-LGB"/>
+                                        <exclude reference="H0H-UU-DcU"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="64" width="400" height="50"/>
                                     <mask key="subviews">
-                                        <include reference="zhq-Xc-LGB"/>
+                                        <include reference="H0H-UU-DcU"/>
                                     </mask>
                                 </variation>
                             </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="wjD-MV-qCz"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="wjD-MV-qCz"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" title="Parent" id="vfh-JN-EFC">
-                        <barButtonItem key="rightBarButtonItem" title="Activities" id="AcC-p4-dbw"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="activityHeaderLabel" destination="zhq-Xc-LGB" id="x3s-Oo-ccx"/>
-                        <segue destination="OfT-UC-ikp" kind="show" identifier="updateToDetails" id="DSH-fo-U2s"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bug-Zb-U5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1761" y="-557"/>
-        </scene>
-        <!--Update Details View Controller-->
-        <scene sceneID="iCz-zb-Jt6">
-            <objects>
-                <viewController id="OfT-UC-ikp" customClass="UpdateDetailsViewController" customModule="EUpdates" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sCW-mI-aWo"/>
-                        <viewControllerLayoutGuide type="bottom" id="mpW-vU-drB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PEg-T9-RQi">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idp-q0-97e">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcu-W6-LDe">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="33" y="205" width="335" height="147"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="33" y="97" width="335" height="147"/>
+                                    <rect key="frame" x="41" y="157" width="318" height="295"/>
                                 </variation>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r23-HP-utl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZW-OD-FLq">
-                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                        <color key="backgroundColor" red="0.1165710566" green="0.60115534120000003" blue="0.93210767660000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
-                                        </variation>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="6ZW-OD-FLq"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="64" width="400" height="50"/>
-                                    <mask key="subviews">
-                                        <include reference="6ZW-OD-FLq"/>
-                                    </mask>
-                                </variation>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="idp-q0-97e"/>
-                                <exclude reference="r23-HP-utl"/>
+                                <exclude reference="z0G-5z-v5M"/>
+                                <exclude reference="gcu-W6-LDe"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="idp-q0-97e"/>
-                                <include reference="r23-HP-utl"/>
+                                <include reference="z0G-5z-v5M"/>
+                                <include reference="gcu-W6-LDe"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="dateLabel" destination="6ZW-OD-FLq" id="A6N-Oa-Hpb"/>
-                        <outlet property="detailsLabel" destination="idp-q0-97e" id="55x-UZ-KBV"/>
+                        <outlet property="dateLabel" destination="H0H-UU-DcU" id="qFC-oF-q01"/>
+                        <outlet property="detailsLabel" destination="gcu-W6-LDe" id="LYm-XX-fGt"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1OO-eP-eEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ck-cA-WZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2514" y="-557"/>
+            <point key="canvasLocation" x="2814" y="-158"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WtX-Yc-fYS">
+            <objects>
+                <tabBarController id="I6z-Um-KKY" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="biF-CL-rm5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LED-T4-qaz" kind="relationship" relationship="viewControllers" id="gdm-BB-Az9"/>
+                        <segue destination="Pfg-L2-VWA" kind="relationship" relationship="viewControllers" id="HJb-li-O7d"/>
+                        <segue destination="QQy-Kq-Xgn" kind="relationship" relationship="viewControllers" id="NRd-BS-6cq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="od7-2I-CZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967.5" y="289"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c9z-TS-uu9">
@@ -293,4 +527,7 @@
     <resources>
         <image name="logo.png" width="390" height="258"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yXp-GS-cxq"/>
+    </inferredMetricsTieBreakers>
 </document>

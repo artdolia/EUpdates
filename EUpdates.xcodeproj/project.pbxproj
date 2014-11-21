@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80027CC1A1FA20800B9BEF0 /* TeacherUpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80027CB1A1FA20800B9BEF0 /* TeacherUpdatesViewController.swift */; };
+		F80027D01A1FA69F00B9BEF0 /* TeacherAddUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80027CF1A1FA69F00B9BEF0 /* TeacherAddUpdateViewController.swift */; };
 		F82945531A1BE30700DBC150 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F82945521A1BE30700DBC150 /* logo.png */; };
 		F87953DA1A1A861500823EFF /* UpdateDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87953D91A1A861500823EFF /* UpdateDetailsViewController.swift */; };
 		F8EBE9EE1A1A7BB200ECE301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBE9ED1A1A7BB200ECE301 /* AppDelegate.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F80027CB1A1FA20800B9BEF0 /* TeacherUpdatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherUpdatesViewController.swift; sourceTree = "<group>"; };
+		F80027CF1A1FA69F00B9BEF0 /* TeacherAddUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherAddUpdateViewController.swift; sourceTree = "<group>"; };
 		F82945521A1BE30700DBC150 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		F87953D91A1A861500823EFF /* UpdateDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateDetailsViewController.swift; sourceTree = "<group>"; };
 		F8EBE9E81A1A7BB200ECE301 /* EUpdates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EUpdates.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +90,8 @@
 				F8EBE9ED1A1A7BB200ECE301 /* AppDelegate.swift */,
 				F8EBE9EF1A1A7BB200ECE301 /* ViewController.swift */,
 				F8EBEA0F1A1A80A600ECE301 /* ParentViewController.swift */,
+				F80027CB1A1FA20800B9BEF0 /* TeacherUpdatesViewController.swift */,
+				F80027CF1A1FA69F00B9BEF0 /* TeacherAddUpdateViewController.swift */,
 				F87953D91A1A861500823EFF /* UpdateDetailsViewController.swift */,
 				F8EBE9F11A1A7BB200ECE301 /* Main.storyboard */,
 				F8EBE9F41A1A7BB200ECE301 /* Images.xcassets */,
@@ -224,8 +230,10 @@
 			files = (
 				F87953DA1A1A861500823EFF /* UpdateDetailsViewController.swift in Sources */,
 				F8EBE9F01A1A7BB200ECE301 /* ViewController.swift in Sources */,
+				F80027D01A1FA69F00B9BEF0 /* TeacherAddUpdateViewController.swift in Sources */,
 				F8EBE9EE1A1A7BB200ECE301 /* AppDelegate.swift in Sources */,
 				F8EBEA101A1A80A600ECE301 /* ParentViewController.swift in Sources */,
+				F80027CC1A1FA20800B9BEF0 /* TeacherUpdatesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
