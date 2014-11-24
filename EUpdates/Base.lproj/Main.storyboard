@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Meo-ab-4NB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kLw-UX-DYI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -31,6 +32,7 @@
                         <viewControllerLayoutGuide type="bottom" id="j52-b8-Gg5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="e14-aJ-HDA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -49,6 +51,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gX1-Zd-ibM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ydS-do-6gk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYp-qJ-NDp">
@@ -126,6 +129,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5KD-pG-Fx9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DRV-52-XXi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXL-PJ-rRJ">
@@ -147,7 +151,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B8-Qr-pVb">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.68448539399999997" blue="5.6137736749999998e-05" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Post Update">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -159,15 +163,6 @@
                                     <action selector="postUpdateAction:" destination="KlV-4t-fig" eventType="touchUpInside" id="tPd-iO-1a1"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdO-sK-Vb5">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="340" width="340" height="128"/>
-                                </variation>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a kid and a subject" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lh7-xU-sk3">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.1165710566" green="0.60115534120000003" blue="0.93210767660000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -178,6 +173,15 @@
                                     <rect key="frame" x="1" y="83" width="399" height="21"/>
                                 </variation>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ErV-1M-Jzq">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.90256375040000003" green="0.97895968570000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="30" y="336" width="340" height="151"/>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -185,8 +189,8 @@
                                 <exclude reference="YXL-PJ-rRJ"/>
                                 <exclude reference="zdt-Zf-SmS"/>
                                 <exclude reference="5B8-Qr-pVb"/>
-                                <exclude reference="BdO-sK-Vb5"/>
                                 <exclude reference="Lh7-xU-sk3"/>
+                                <exclude reference="ErV-1M-Jzq"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -194,24 +198,24 @@
                                 <include reference="YXL-PJ-rRJ"/>
                                 <include reference="zdt-Zf-SmS"/>
                                 <include reference="5B8-Qr-pVb"/>
-                                <include reference="BdO-sK-Vb5"/>
                                 <include reference="Lh7-xU-sk3"/>
+                                <include reference="ErV-1M-Jzq"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="pickerView" destination="YXL-PJ-rRJ" id="L9D-kJ-Nqc"/>
-                        <outlet property="updateTextView" destination="BdO-sK-Vb5" id="5O6-zF-JZI"/>
+                        <outlet property="updateTextView" destination="ErV-1M-Jzq" id="VGb-jw-Ev7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcu-Zx-heY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2754" y="-2331"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--TeacherTabController-->
         <scene sceneID="pkI-rA-vRE">
             <objects>
-                <tabBarController id="bWR-H5-bcU" sceneMemberID="viewController">
+                <tabBarController title="TeacherTabController" id="bWR-H5-bcU" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="HH5-cd-HlU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -302,16 +306,22 @@
                                     <action selector="resetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPt-Jo-KZ0"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="xIT-dC-vQT">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="144" y="85" width="130" height="100"/>
+                                </variation>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgR-Cr-YQW">
                                 <rect key="frame" x="270" y="426" width="242" height="44"/>
-                                <color key="backgroundColor" red="0.1165710566" green="0.60115534120000003" blue="0.93210767660000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.68448539399999997" blue="5.6137736749999998e-05" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="88" y="441" width="242" height="44"/>
+                                    <rect key="frame" x="39" y="437" width="340" height="70"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="79" y="437" width="242" height="44"/>
@@ -320,12 +330,6 @@
                                     <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cl9-jq-oT3"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="xIT-dC-vQT">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="144" y="85" width="130" height="100"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -373,7 +377,7 @@
         <!--ParentFeedback-->
         <scene sceneID="AKV-wK-NbV">
             <objects>
-                <viewController title="ParentFeedback" id="QQy-Kq-Xgn" sceneMemberID="viewController">
+                <viewController title="ParentFeedback" id="QQy-Kq-Xgn" customClass="ParentFeedbackViewController" customModule="EUpdates" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4gF-qj-qnn"/>
                         <viewControllerLayoutGuide type="bottom" id="4dB-0a-f74"/>
@@ -381,9 +385,65 @@
                     <view key="view" contentMode="scaleToFill" id="sAK-13-Rfn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSf-zM-nCe">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="182" y="327" width="37" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="clearFeedbackTextButton:" destination="QQy-Kq-Xgn" eventType="touchUpInside" id="5jb-sz-X5n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydG-oj-KLq">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.68448539399999997" blue="5.6137736749999998e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Send Feedback">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="30" y="399" width="340" height="70"/>
+                                </variation>
+                                <connections>
+                                    <action selector="sendFeedbackButton:" destination="QQy-Kq-Xgn" eventType="touchUpInside" id="aGF-kZ-ANL"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZ4-BA-deG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.90256375040000003" green="0.97895968570000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="30" y="116" width="340" height="196"/>
+                                </variation>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="SSf-zM-nCe"/>
+                                <exclude reference="ydG-oj-KLq"/>
+                                <exclude reference="CZ4-BA-deG"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="SSf-zM-nCe"/>
+                                <include reference="ydG-oj-KLq"/>
+                                <include reference="CZ4-BA-deG"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feedback" id="XTF-Pu-Osl"/>
+                    <connections>
+                        <outlet property="feedbackTextField" destination="CZ4-BA-deG" id="Sl8-0e-oRl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUd-AO-nU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -420,6 +480,7 @@
                         <viewControllerLayoutGuide type="bottom" id="S7v-Ul-Nrc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WoQ-8D-Hx7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0G-5z-v5M">
@@ -485,10 +546,10 @@
             </objects>
             <point key="canvasLocation" x="2814" y="-158"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--ParentTabController-->
         <scene sceneID="WtX-Yc-fYS">
             <objects>
-                <tabBarController id="I6z-Um-KKY" sceneMemberID="viewController">
+                <tabBarController title="ParentTabController" id="I6z-Um-KKY" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="biF-CL-rm5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
