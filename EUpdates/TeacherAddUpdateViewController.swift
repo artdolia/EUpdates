@@ -10,13 +10,12 @@ import UIKit
 
 class TeacherAddUpdateViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
-    
+    //properties for the ui elements
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var updateTextView: UITextView!
 
     
     //temporary data
-    
     var kids = ["All kids", "Art Dolia", "Kyle Blauer", "Zach Shultze"]
     var subjects = ["Math", "Science", "Art"]
     
@@ -26,19 +25,22 @@ class TeacherAddUpdateViewController: UIViewController, UIPickerViewDataSource, 
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
         
+        //call method to compose update string from the pickers selections
         self.composeUpdateString()
+        
+        self.tabBarController?.title = "Add Update"
     }
 
     
     //MARK: UIPickerViewDataSource
         
-        // returns the number of 'columns' to display.
+    // returns the number of 'columns' to display by picker
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int{
         
         return 2
     }
         
-        // returns the # of rows in each component..
+    // returns the # of rows in each component of picker
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
         
         if component == 0 {
@@ -48,7 +50,7 @@ class TeacherAddUpdateViewController: UIViewController, UIPickerViewDataSource, 
         }
     }
     
-    
+    // update each row in picker with data
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         
         if component == 0 {
@@ -59,24 +61,23 @@ class TeacherAddUpdateViewController: UIViewController, UIPickerViewDataSource, 
 
     }
     
+    //modify the update string at each change in the picker
     func pickerView(pickerView: UIPickerView!, didSelectRow row: Int, inComponent component: Int)
     {
         self.composeUpdateString()
     }
 
-
+    
     @IBAction func postUpdateAction(sender: UIButton) {
         
+        //post the update if the text is present
         if self.updateTextView.text != ""{
             
             self.postUpdate()
-        
         }
-        
-            
-        
     }
     
+    //compose the string from picker values
     func composeUpdateString(){
         
         let who = self.kids[pickerView.selectedRowInComponent(0)]
@@ -129,7 +130,5 @@ class TeacherAddUpdateViewController: UIViewController, UIPickerViewDataSource, 
         })
         
         task.resume()
-        
-        
     }
 }

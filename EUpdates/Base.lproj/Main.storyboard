@@ -7,7 +7,7 @@
         <!--Attendance-->
         <scene sceneID="uCE-eZ-uCI">
             <objects>
-                <viewController id="E9J-HS-K9m" sceneMemberID="viewController">
+                <viewController id="E9J-HS-K9m" customClass="TeacherAttendanceViewController" customModule="EUpdates" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y9f-h0-H3o"/>
                         <viewControllerLayoutGuide type="bottom" id="Meo-ab-4NB"/>
@@ -26,7 +26,7 @@
         <!--Feedback-->
         <scene sceneID="qkI-pv-BZn">
             <objects>
-                <viewController id="hYH-db-ba0" sceneMemberID="viewController">
+                <viewController id="hYH-db-ba0" customClass="TeacherFeedbackViewController" customModule="EUpdates" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4wD-b1-sbr"/>
                         <viewControllerLayoutGuide type="bottom" id="j52-b8-Gg5"/>
@@ -173,13 +173,13 @@
                                     <rect key="frame" x="1" y="83" width="399" height="21"/>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ErV-1M-Jzq">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hg3-Ak-dlE">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.90256375040000003" green="0.97895968570000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="336" width="340" height="151"/>
+                                    <rect key="frame" x="30" y="345" width="340" height="128"/>
                                 </variation>
                             </textView>
                         </subviews>
@@ -190,7 +190,7 @@
                                 <exclude reference="zdt-Zf-SmS"/>
                                 <exclude reference="5B8-Qr-pVb"/>
                                 <exclude reference="Lh7-xU-sk3"/>
-                                <exclude reference="ErV-1M-Jzq"/>
+                                <exclude reference="Hg3-Ak-dlE"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -199,13 +199,13 @@
                                 <include reference="zdt-Zf-SmS"/>
                                 <include reference="5B8-Qr-pVb"/>
                                 <include reference="Lh7-xU-sk3"/>
-                                <include reference="ErV-1M-Jzq"/>
+                                <include reference="Hg3-Ak-dlE"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="pickerView" destination="YXL-PJ-rRJ" id="L9D-kJ-Nqc"/>
-                        <outlet property="updateTextView" destination="ErV-1M-Jzq" id="VGb-jw-Ev7"/>
+                        <outlet property="updateTextView" destination="Hg3-Ak-dlE" id="CAI-xF-xkp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcu-Zx-heY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -358,7 +358,7 @@
         <!--ParentAttendance-->
         <scene sceneID="khn-Jl-lwx">
             <objects>
-                <viewController title="ParentAttendance" id="Pfg-L2-VWA" sceneMemberID="viewController">
+                <viewController title="ParentAttendance" id="Pfg-L2-VWA" customClass="ParentAttendanceViewController" customModule="EUpdates" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t8L-PP-FKY"/>
                         <viewControllerLayoutGuide type="bottom" id="9a8-0h-eLM"/>
@@ -414,13 +414,13 @@
                                     <action selector="sendFeedbackButton:" destination="QQy-Kq-Xgn" eventType="touchUpInside" id="aGF-kZ-ANL"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZ4-BA-deG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0UH-dn-kpj">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.90256375040000003" green="0.97895968570000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="30" y="116" width="340" height="196"/>
+                                    <rect key="frame" x="30" y="89" width="340" height="236"/>
                                 </variation>
                             </textView>
                         </subviews>
@@ -429,25 +429,25 @@
                             <mask key="subviews">
                                 <exclude reference="SSf-zM-nCe"/>
                                 <exclude reference="ydG-oj-KLq"/>
-                                <exclude reference="CZ4-BA-deG"/>
+                                <exclude reference="0UH-dn-kpj"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="SSf-zM-nCe"/>
                                 <include reference="ydG-oj-KLq"/>
-                                <include reference="CZ4-BA-deG"/>
+                                <include reference="0UH-dn-kpj"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feedback" id="XTF-Pu-Osl"/>
                     <connections>
-                        <outlet property="feedbackTextField" destination="CZ4-BA-deG" id="Sl8-0e-oRl"/>
+                        <outlet property="feedbackTextField" destination="0UH-dn-kpj" id="QQh-VO-Aok"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUd-AO-nU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1906.5" y="1228"/>
+            <point key="canvasLocation" x="1906.5" y="1248"/>
         </scene>
         <!--ParentUpdates-->
         <scene sceneID="imr-K0-hzM">
